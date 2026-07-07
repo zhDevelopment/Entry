@@ -1,3 +1,0 @@
-FerrumUpdaterVerison:1.0.0.13.1
-FerrumVersion:24.0.0.24
-FerrumTestVersion:24.0.0.24
