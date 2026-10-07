@@ -1,3 +1,3 @@
 FerrumUpdaterVerison:1.0.0.27
-FerrumVersion:24.0.0.48
+FerrumVersion:24.0.0.51
 FerrumTestVersion:24.0.0.51
