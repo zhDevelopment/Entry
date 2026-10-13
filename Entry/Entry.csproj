@@ -7,4 +7,11 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <Target Name="CopyToBuildRelease" AfterTargets="Build" Condition="'$(Configuration)' == 'Debug'">
+    <PropertyGroup>
+      <BuildReleaseDebugDir>C:\Users\sobolev.sa\YandexDisk\MyFolder\Work\Projects\Revit_Plugins\BuildRelease\Debug\Functions\Revit24\</BuildReleaseDebugDir>
+    </PropertyGroup>
+    <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(BuildReleaseDebugDir)" ContinueOnError="true" />
+    <Copy SourceFiles="$(TargetDir)$(TargetName).pdb" DestinationFolder="$(BuildReleaseDebugDir)" Condition="Exists('$(TargetDir)$(TargetName).pdb')" ContinueOnError="true" />
+  </Target>
 </Project>
